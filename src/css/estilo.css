@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Instrument+Sans:wght@300;400;500;600&display=swap');
+
+/* ─── VARIÁVEIS ─── */
+:root {
+  --bg:       #f0ede6;
+  --bg2:      #e8e4db;
+  --bg3:      #dedad0;
+  --surface:  #ffffff;
+  --surface2: #f7f4ef;
+  --border:   rgba(0,0,0,0.10);
+  --accent:   #1a4a2e;
+  --accent2:  #2d6b44;
+  --accent3:  #4a9464;
+  --green:    #1a4a2e;
+  --red:      #b83232;
+  --text:     #0f0f0d;
+  --text2:    #5a5750;
+  --text3:    #9e9a93;
+  --radius:   12px;
+  --radius-sm: 8px;
+  --shadow:   0 8px 40px rgba(0,0,0,0.10);
+  --glow:     0 0 0 1px rgba(26,74,46,0.12);
+}
