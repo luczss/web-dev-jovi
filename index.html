@@ -1,14 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="src/css/estilo.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GRUPO FOCO — IA que Transforma o que Você Vê</title>
+  <link rel="stylesheet" href="src/css/estilo.css" />
 </head>
 <body>
-    
 
-    <script src="src/js/script.js"></script>
+  <nav id="navbar">
+    <div class="nav-logo">GRUPO FOCO<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Início</a></li>
+      <li><a href="./pages/recursos.html">Funcionalidades</a></li>
+      <li><a href="./pages/galeria.html">Galeria</a></li>
+      <li><a href="./pages/contanto.html">Contato</a></li>
+      <li><a href="./pages/login.html" class="btn-nav">Entrar</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-badge">IA de Nova Geração</span>
+      <h1 class="hero-title">A câmera que<br><span class="gradient-text">pensa por você</span></h1>
+      <p class="hero-sub">GRUPO FOCO transforma qualquer foto de lousa em conhecimento digital editável — automático, preciso e organizado.</p>
+      <div class="hero-cta">
+        <a href="./pages/recursos.html" class="btn-primary">Descobrir GRUPO FOCO</a>
+        <a href="./pages/galeria.html" class="btn-ghost">Ver galeria</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="98">0</span><span>%</span>
+          <small>Precisão OCR</small>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="10">0</span><span>x</span>
+          <small>Mais rápido</small>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="50">0</span><span>k+</span>
+          <small>Usuários</small>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="phone-mockup">
+        <div class="phone-screen">
+          <div class="scan-line"></div>
+          <div class="scan-content">
+            <div class="scan-icon">📸</div>
+            <p>Capturando lousa...</p>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+            <p class="scan-result">✓ Texto reconhecido!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-preview">
+    <h2 class="section-title">O que o GRUPO FOCO faz</h2>
+    <p class="section-sub">Clique nos cards para saber mais</p>
+    <div class="cards-grid" id="cardsGrid">
+      <div class="card">
+        <div class="card-icon">🔍</div>
+        <h3>Scan Inteligente</h3>
+        <p>Captura e transforma escrita manual em texto digital editável com IA avançada.</p>
+        <button class="card-btn" onclick="expandCard(this)">Saiba mais</button>
+        <div class="card-detail hidden">Remove sombras, reflexos e distorções da foto da lousa automaticamente.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">📄</div>
+        <h3>PDF Automático</h3>
+        <p>Gera PDF limpo, organizado e compartilhável com um toque.</p>
+        <button class="card-btn" onclick="expandCard(this)">Saiba mais</button>
+        <div class="card-detail hidden">Conversão automática para PDF organizado por disciplinas e datas.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">🧠</div>
+        <h3>Reconhecimento de Fórmulas</h3>
+        <p>Identifica fórmulas, diagramas e gráficos automaticamente.</p>
+        <button class="card-btn" onclick="expandCard(this)">Saiba mais</button>
+        <div class="card-detail hidden">Suporte a notação matemática e química para exportação em Word e Notion.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">☁️</div>
+        <h3>Nuvem Integrada</h3>
+        <p>Sincroniza com Google Drive e OneDrive automaticamente.</p>
+        <button class="card-btn" onclick="expandCard(this)">Saiba mais</button>
+        <div class="card-detail hidden">Organize por disciplinas, semestres e datas — acessível de qualquer dispositivo.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alert-section">
+    <h2 class="section-title">Experimente o GRUPO FOCO</h2>
+    <p class="section-sub">Interaja com as funcionalidades do sistema</p>
+    <div class="alert-buttons">
+      <button class="btn-alert" onclick="showScanAlert()">📸 Simular Scan</button>
+      <button class="btn-alert btn-secondary" onclick="showPromptDemo()">✏️ Inserir Nota</button>
+      <button class="btn-alert btn-danger" onclick="showConfirmDelete()">🗑️ Deletar Nota</button>
+    </div>
+    <div id="alertOutput" class="alert-output hidden"></div>
+    <div id="notesList" class="notes-list"></div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="footer-logo">GRUPO FOCO<span class="dot">.</span></span>
+        <p>IA que transforma o que você vê em conhecimento.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Início</a>
+        <a href="./pages/recursos.html">Funcionalidades</a>
+        <a href="./pages/galeria.html">Galeria</a>
+        <a href="./pages/contanto.html">Contato</a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2026 GRUPO FOCO. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="src/js/script.js"></script>
 </body>
 </html>
