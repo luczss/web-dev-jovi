@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GRUPO FOCO — Contato</title>
+  <link rel="stylesheet" href="../src/css/estilo.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-logo">GRUPO FOCO<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="recursos.html">Funcionalidades</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="contanto.html" class="active">Contato</a></li>
+      <li><a href="login.html" class="btn-nav">Entrar</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  </nav>
+
+  <section class="page-hero">
+    <div class="orb orb1"></div>
+    <h1>Fale com a <span class="gradient-text">GRUPO FOCO</span></h1>
+    <p>Tem dúvidas, sugestões ou quer uma demo? Estamos aqui.</p>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <h2>Entre em contato</h2>
+        <p>Nossa equipe responde em até 24 horas nos dias úteis.</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <strong>E-mail</strong>
+              <p>contato@grupofoco.ai</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📱</span>
+            <div>
+              <strong>WhatsApp</strong>
+              <p>+55 (11) 99999-0000</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🏢</span>
+            <div>
+              <strong>Endereço</strong>
+              <p>São Paulo, SP — Brasil</p>
+            </div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-btn" onclick="socialClick(event,'Instagram')">Instagram</a>
+          <a href="#" class="social-btn" onclick="socialClick(event,'LinkedIn')">LinkedIn</a>
+          <a href="#" class="social-btn" onclick="socialClick(event,'Twitter/X')">Twitter/X</a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper">
+        <div id="formSuccess" class="form-success hidden">
+          <span class="success-icon">✅</span>
+          <h3>Mensagem enviada!</h3>
+          <p>Obrigado pelo contato. Responderemos em breve.</p>
+          <button class="btn-primary" onclick="resetContactForm()">Enviar outra mensagem</button>
+        </div>
+
+        <div id="contactFormDiv">
+          <h2>Enviar mensagem</h2>
+          <div class="form-group">
+            <label for="contactName">Nome completo *</label>
+            <input type="text" id="contactName" placeholder="Seu nome" oninput="clearError('contactName')" />
+            <span class="field-error" id="contactName-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">E-mail *</label>
+            <input type="email" id="contactEmail" placeholder="seu@email.com" oninput="clearError('contactEmail')" />
+            <span class="field-error" id="contactEmail-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="contactSubject">Assunto *</label>
+            <select id="contactSubject" onchange="clearError('contactSubject')">
+              <option value="">Selecione um assunto</option>
+              <option value="demo">Solicitar demo</option>
+              <option value="support">Suporte técnico</option>
+              <option value="partnership">Parceria</option>
+              <option value="press">Imprensa</option>
+              <option value="other">Outro</option>
+            </select>
+            <span class="field-error" id="contactSubject-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="contactMsg">Mensagem *</label>
+            <textarea id="contactMsg" placeholder="Escreva sua mensagem..." rows="5"
+              oninput="clearError('contactMsg'); updateCharCount()"></textarea>
+            <div class="char-count"><span id="charCount">0</span>/500 caracteres</div>
+            <span class="field-error" id="contactMsg-error"></span>
+          </div>
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="contactConsent" />
+            <label for="contactConsent">Concordo com a
+              <a href="#" onclick="showPrivacyPolicy(event)">Política de Privacidade</a>
+            </label>
+            <span class="field-error" id="contactConsent-error"></span>
+          </div>
+          <button class="btn-primary btn-full" onclick="submitContact()">Enviar Mensagem</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div id="modal-overlay" class="modal-overlay hidden" onclick="closeModal()">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="footer-logo">GRUPO FOCO<span class="dot">.</span></span>
+        <p>IA que transforma o que você vê em conhecimento.</p>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">Início</a>
+        <a href="recursos.html">Funcionalidades</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contanto.html">Contato</a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2026 GRUPO FOCO. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="../src/js/script.js"></script>
+</body>
+</html>
