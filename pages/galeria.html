@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GRUPO FOCO — Galeria</title>
+  <link rel="stylesheet" href="../src/css/estilo.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-logo">GRUPO FOCO<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="recursos.html">Funcionalidades</a></li>
+      <li><a href="galeria.html" class="active">Galeria</a></li>
+      <li><a href="contanto.html">Contato</a></li>
+      <li><a href="login.html" class="btn-nav">Entrar</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  </nav>
+
+  <section class="page-hero">
+    <div class="orb orb1"></div>
+    <h1>Galeria <span class="gradient-text">GRUPO FOCO</span></h1>
+    <p>Veja o GRUPO FOCO em ação — transformando capturas em conhecimento.</p>
+  </section>
+
+  <!-- SLIDESHOW -->
+  <section class="slideshow-section">
+    <h2 class="section-title">Casos de Uso</h2>
+
+    <div class="slideshow-wrapper">
+      <div class="slideshow" id="slideshow">
+
+        <div class="slide active">
+          <div class="slide-visual">
+            <div class="slide-phone">
+              <div class="slide-screen">
+                <div class="board-sim">
+                  <div class="board-text">∫ f(x)dx = F(b) - F(a)</div>
+                  <div class="board-text">y = mx + b</div>
+                  <div class="board-text">σ² = Σ(x-μ)²/N</div>
+                </div>
+                <div class="scan-overlay"><div class="scan-beam"></div></div>
+              </div>
+            </div>
+            <div class="slide-result">
+              <div class="result-card">
+                <span class="result-badge">✓ Convertido</span>
+                <p>∫ f(x)dx = F(b) - F(a)</p>
+                <p>y = mx + b</p>
+                <p>σ² = Σ(x-μ)²/N</p>
+                <small>📄 Exportado como PDF</small>
+              </div>
+            </div>
+          </div>
+          <div class="slide-info">
+            <h3>Matemática &amp; Fórmulas</h3>
+            <p>GRUPO FOCO reconhece notação matemática complexa e converte para texto editável instantaneamente.</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-visual">
+            <div class="slide-phone">
+              <div class="slide-screen">
+                <div class="board-sim">
+                  <div class="board-text" style="color:#86efac">H₂O → H₂ + ½O₂</div>
+                  <div class="board-text" style="color:#86efac">CH₄ + 2O₂ → CO₂ + 2H₂O</div>
+                  <div class="board-text" style="color:#86efac">pH = -log[H⁺]</div>
+                </div>
+                <div class="scan-overlay"><div class="scan-beam"></div></div>
+              </div>
+            </div>
+            <div class="slide-result">
+              <div class="result-card">
+                <span class="result-badge" style="background:rgba(134,239,172,.15);color:#86efac">✓ Química</span>
+                <p>H₂O → H₂ + ½O₂</p>
+                <p>CH₄ + 2O₂ → CO₂ + 2H₂O</p>
+                <p>pH = -log[H⁺]</p>
+                <small>☁️ Sincronizado com Drive</small>
+              </div>
+            </div>
+          </div>
+          <div class="slide-info">
+            <h3>Química &amp; Reações</h3>
+            <p>Equações químicas, fórmulas moleculares e notações especiais reconhecidas com alta precisão.</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-visual">
+            <div class="slide-phone">
+              <div class="slide-screen">
+                <div class="board-sim">
+                  <div class="board-text" style="color:#fde68a">Revolução Francesa</div>
+                  <div class="board-text" style="color:#fde68a">1789 — Queda da Bastilha</div>
+                  <div class="board-text" style="color:#fde68a">Liberdade • Igualdade</div>
+                </div>
+                <div class="scan-overlay"><div class="scan-beam"></div></div>
+              </div>
+            </div>
+            <div class="slide-result">
+              <div class="result-card">
+                <span class="result-badge" style="background:rgba(253,230,138,.15);color:#fde68a">✓ História</span>
+                <p>Revolução Francesa</p>
+                <p>1789 — Queda da Bastilha</p>
+                <p>Liberdade • Igualdade</p>
+                <small>📚 Organizado por data</small>
+              </div>
+            </div>
+          </div>
+          <div class="slide-info">
+            <h3>Humanidades &amp; Texto</h3>
+            <p>Textos corridos, listas e esquemas são capturados e organizados automaticamente por disciplina.</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-visual">
+            <div class="slide-phone">
+              <div class="slide-screen">
+                <div class="board-sim diagram">
+                  <div class="diagram-box">Input</div>
+                  <div class="diagram-arrow">→</div>
+                  <div class="diagram-box highlight-box">Processo</div>
+                  <div class="diagram-arrow">→</div>
+                  <div class="diagram-box">Output</div>
+                </div>
+                <div class="scan-overlay"><div class="scan-beam"></div></div>
+              </div>
+            </div>
+            <div class="slide-result">
+              <div class="result-card">
+                <span class="result-badge" style="background:rgba(167,139,250,.15);color:#a78bfa">✓ Diagrama</span>
+                <p>Fluxo reconhecido</p>
+                <p>Input → Processo → Output</p>
+                <small>🖼️ Exportado como SVG</small>
+              </div>
+            </div>
+          </div>
+          <div class="slide-info">
+            <h3>Diagramas &amp; Fluxos</h3>
+            <p>Fluxogramas e diagramas visuais são interpretados e estruturados em formato reutilizável.</p>
+          </div>
+        </div>
+
+      </div><!-- /slideshow -->
+
+      <div class="slideshow-controls">
+        <button class="slide-btn" onclick="changeSlide(-1)">&#8592;</button>
+        <div class="slide-dots" id="slideDots"></div>
+        <button class="slide-btn" onclick="changeSlide(1)">&#8594;</button>
+      </div>
+      <div class="slide-counter" id="slideCounter">1 / 4</div>
+    </div>
+
+    <div class="slideshow-actions">
+      <button class="btn-ghost" id="autoplayBtn" onclick="toggleAutoplay()">▶ Autoplay</button>
+    </div>
+  </section>
+
+  <!-- GALERIA COM FILTROS -->
+  <section class="filter-gallery">
+    <h2 class="section-title">Biblioteca de Capturas</h2>
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-filter="all"     onclick="filterGallery(this)">Todos</button>
+      <button class="filter-tab"        data-filter="math"    onclick="filterGallery(this)">Matemática</button>
+      <button class="filter-tab"        data-filter="science" onclick="filterGallery(this)">Ciências</button>
+      <button class="filter-tab"        data-filter="history" onclick="filterGallery(this)">Humanas</button>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item" data-category="math">
+        <div class="gallery-thumb math-thumb">
+          <div class="thumb-content">∫∑π²</div>
+          <div class="thumb-overlay"><span>Ver detalhes</span></div>
+        </div>
+        <p>Cálculo Integral</p>
+        <span class="gallery-date">12 maio 2026</span>
+      </div>
+      <div class="gallery-item" data-category="science">
+        <div class="gallery-thumb science-thumb">
+          <div class="thumb-content">H₂O CH₄</div>
+          <div class="thumb-overlay"><span>Ver detalhes</span></div>
+        </div>
+        <p>Química Orgânica</p>
+        <span class="gallery-date">10 maio 2026</span>
+      </div>
+      <div class="gallery-item" data-category="history">
+        <div class="gallery-thumb history-thumb">
+          <div class="thumb-content">1789</div>
+          <div class="thumb-overlay"><span>Ver detalhes</span></div>
+        </div>
+        <p>Revolução Francesa</p>
+        <span class="gallery-date">8 maio 2026</span>
+      </div>
+      <div class="gallery-item" data-category="math">
+        <div class="gallery-thumb math-thumb-alt">
+          <div class="thumb-content">y=mx+b</div>
+          <div class="thumb-overlay"><span>Ver detalhes</span></div>
+        </div>
+        <p>Álgebra Linear</p>
+        <span class="gallery-date">5 maio 2026</span>
+      </div>
+      <div class="gallery-item" data-category="science">
+        <div class="gallery-thumb science-thumb-alt">
+          <div class="thumb-content">pH DNA</div>
+          <div class="thumb-overlay"><span>Ver detalhes</span></div>
+        </div>
+        <p>Biologia Celular</p>
+        <span class="gallery-date">3 maio 2026</span>
+      </div>
+      <div class="gallery-item" data-category="history">
+        <div class="gallery-thumb history-thumb-alt">
+          <div class="thumb-content">Marx</div>
+          <div class="thumb-overlay"><span>Ver detalhes</span></div>
+        </div>
+        <p>Filosofia Política</p>
+        <span class="gallery-date">1 maio 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="footer-logo">GRUPO FOCO<span class="dot">.</span></span>
+        <p>IA que transforma o que você vê em conhecimento.</p>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">Início</a>
+        <a href="recursos.html">Funcionalidades</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contanto.html">Contato</a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2026 GRUPO FOCO. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="../src/js/script.js"></script>
+</body>
+</html>
