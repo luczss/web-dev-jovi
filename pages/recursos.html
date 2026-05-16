@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GRUPO FOCO — Funcionalidades</title>
+  <link rel="stylesheet" href="../src/css/estilo.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-logo">GRUPO FOCO<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="recursos.html" class="active">Funcionalidades</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="contanto.html">Contato</a></li>
+      <li><a href="login.html" class="btn-nav">Entrar</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  </nav>
+
+  <section class="page-hero">
+    <div class="orb orb1"></div>
+    <h1>Funcionalidades <span class="gradient-text">GRUPO FOCO</span></h1>
+    <p>Tudo que você precisa para transformar sua câmera em uma ferramenta de estudo poderosa.</p>
+  </section>
+
+  <section class="features-full">
+    <div class="features-columns">
+
+      <div class="feat-col">
+        <h2 class="col-title"><span class="col-icon">📦</span> Produtos &amp; Serviços</h2>
+        <ul class="feat-list">
+          <li class="feat-item" onclick="toggleFeat(this)">
+            <span class="feat-arrow">▶</span>
+            <strong>Smartphone GRUPO FOCO com câmeras inteligentes e IA</strong>
+            <p class="feat-desc hidden">Hardware otimizado com sensores de alta resolução e processamento local de IA para máxima privacidade e velocidade.</p>
+          </li>
+          <li class="feat-item" onclick="toggleFeat(this)">
+            <span class="feat-arrow">▶</span>
+            <strong>Scan IA de Lousa</strong>
+            <p class="feat-desc hidden">Captura, reconhece e transforma escrita da lousa em texto digital editável com precisão de 98%.</p>
+          </li>
+          <li class="feat-item" onclick="toggleFeat(this)">
+            <span class="feat-arrow">▶</span>
+            <strong>Conversão automática para PDF</strong>
+            <p class="feat-desc hidden">Gera PDFs organizados automaticamente por disciplina e data, prontos para compartilhar.</p>
+          </li>
+          <li class="feat-item" onclick="toggleFeat(this)">
+            <span class="feat-arrow">▶</span>
+            <strong>Melhoria de imagem com IA</strong>
+            <p class="feat-desc hidden">Contraste, nitidez, correção de perspectiva e iluminação ajustados automaticamente para cada captura.</p>
+          </li>
+          <li class="feat-item" onclick="toggleFeat(this)">
+            <span class="feat-arrow">▶</span>
+            <strong>Reconhecimento de fórmulas, diagramas e gráficos</strong>
+            <p class="feat-desc hidden">Detecta notação matemática, química e diagramas, exportando em formato compatível com editores acadêmicos.</p>
+          </li>
+          <li class="feat-item" onclick="toggleFeat(this)">
+            <span class="feat-arrow">▶</span>
+            <strong>Integração com nuvem (Google Drive e OneDrive)</strong>
+            <p class="feat-desc hidden">Sincronização automática para acesso de qualquer dispositivo, a qualquer hora.</p>
+          </li>
+          <li class="feat-item" onclick="toggleFeat(this)">
+            <span class="feat-arrow">▶</span>
+            <strong>Modo Estudo</strong>
+            <p class="feat-desc hidden">Otimizado para leitura de documentos e anotações com menos distração e melhor foco visual.</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="feat-col">
+        <h2 class="col-title"><span class="col-icon">🚀</span> Criadores de Ganhos</h2>
+        <ul class="feat-list">
+          <li class="gain-item"><span class="check">✓</span> IA que entende o conteúdo da lousa e transforma em texto digital</li>
+          <li class="gain-item"><span class="check">✓</span> Economiza tempo: menos cópia manual, mais foco no aprendizado</li>
+          <li class="gain-item"><span class="check">✓</span> Facilita revisão e busca de conteúdos</li>
+          <li class="gain-item"><span class="check">✓</span> Aumenta a produtividade nos estudos</li>
+          <li class="gain-item"><span class="check">✓</span> Organiza tudo automaticamente</li>
+          <li class="gain-item"><span class="check">✓</span> Mais praticidade no dia a dia escolar e universitário</li>
+        </ul>
+
+        <h2 class="col-title mt"><span class="col-icon">💊</span> Aliviadores de Dores</h2>
+        <ul class="feat-list">
+          <li class="pain-item"><span class="shield">🛡</span> Remove sombras, reflexos e distorções da foto da lousa</li>
+          <li class="pain-item"><span class="shield">🛡</span> Transforma escrita manual em texto digital com alta precisão</li>
+          <li class="pain-item"><span class="shield">🛡</span> Gera PDF limpo e compartilhável</li>
+          <li class="pain-item"><span class="shield">🛡</span> Elimina a necessidade de copiar conteúdo manualmente</li>
+          <li class="pain-item"><span class="shield">🛡</span> Reduz o risco de perder informações importantes</li>
+          <li class="pain-item"><span class="shield">🛡</span> Interface simples e rápida</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="compare-section">
+    <h2 class="section-title">GRUPO FOCO vs Câmera Comum</h2>
+    <div class="table-wrapper">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Funcionalidade</th>
+            <th class="foco-col">GRUPO FOCO ✦</th>
+            <th>Câmera Comum</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Reconhecimento de texto (OCR)</td>
+            <td class="foco-col">✓ Automático</td>
+            <td>✗ Manual</td>
+          </tr>
+          <tr>
+            <td>Correção de perspectiva</td>
+            <td class="foco-col">✓ IA</td>
+            <td>✗ Não disponível</td>
+          </tr>
+          <tr>
+            <td>Geração de PDF</td>
+            <td class="foco-col">✓ 1 toque</td>
+            <td>✗ App externo</td>
+          </tr>
+          <tr>
+            <td>Organização automática</td>
+            <td class="foco-col">✓ Por data e disciplina</td>
+            <td>✗ Manual</td>
+          </tr>
+          <tr>
+            <td>Busca no conteúdo</td>
+            <td class="foco-col">✓ Texto indexado</td>
+            <td>✗ Impossível em imagens</td>
+          </tr>
+          <tr>
+            <td>Sync com nuvem</td>
+            <td class="foco-col">✓ Automático</td>
+            <td>~ Manual</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="footer-logo">GRUPO FOCO<span class="dot">.</span></span>
+        <p>IA que transforma o que você vê em conhecimento.</p>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">Início</a>
+        <a href="recursos.html">Funcionalidades</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contanto.html">Contato</a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2026 GRUPO FOCO. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="../src/js/script.js"></script>
+</body>
+</html>
